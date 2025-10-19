@@ -27,13 +27,14 @@ public class HelloController {
     }
     @FXML
     void equals(ActionEvent event) {
+        System.out.println("result");
         Answer answer = new Answer();
-        try {
-            result = answer.anAnswer(result);
-        }
-        catch (Exception e) {
-            result = "Ошибка";
-        }
+    try {
+        result = answer.anAnswer(result);
+    }
+    catch (Exception e) {
+        result = "Ошибка";
+    }
 
          example.setText(result);
     }
